@@ -56,7 +56,7 @@ configurationOverrides:
   ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
   # EXTERNAL://${HOST_IP}:$((31090 + ${KAFKA_BROKER_ID}))
   "advertised.listeners": |-
-  EXTERNAL://192.168.86.235:$((31090 + ${KAFKA_BROKER_ID}))
+  EXTERNAL://${HOST_IP}:$((31090 + ${KAFKA_BROKER_ID}))
   "listener.security.protocol.map": |-
    PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
