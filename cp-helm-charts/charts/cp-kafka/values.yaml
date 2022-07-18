@@ -55,7 +55,7 @@ configurationOverrides:
   ## Advertised listeners will use the firstListenerPort value as it's default unless overridden here.
   ## Setting "advertised.listeners" here appends to "PLAINTEXT://${POD_IP}:9092,"
   "advertised.listeners": |-
-   EXTERNAL://34.171.199.161:$((31090 + ${KAFKA_BROKER_ID}))
+   EXTERNAL://34.66.152.91:$((31090 + ${KAFKA_BROKER_ID}))
   "listener.security.protocol.map": |-
    PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
 
